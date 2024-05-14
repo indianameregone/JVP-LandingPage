@@ -59,10 +59,55 @@ nav ul li:hover{
     align-items: center;    
     overflow-y: hidden;
 }
-.carrousel .grande .img{
+.carrousel .grande div{
     width: calc(100%/3);
-    background-color: chocolate;
-
+}
+#data-analitics{
+    background-image: url('./img/Big-data-analytics-solutions.jpg');
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    overflow: hidden;
+    
+}
+#data-management{
+    background-image: url('./img/datamanagement.jpg');
+    background-size:cover ;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+#data-science{
+    background-image: url('./img/datascience2.png');
+    width: 100%;
+    height: 500px;
+    background-size:cover   ;
+    overflow: hidden;
+}
+#data-analitics h2,#data-management h2, #data-science h2{
+    position: relative;
+    line-height: 50px;
+    font-size: 40px;
+    overflow: hidden;
+    color: var(--letter);
+    top: 10%;
+    left: 5%;
+}
+#data-analitics p,#data-management p, #data-science p{
+    position: relative;
+    line-height: 40px;
+    width: 60%;
+    margin-top: 5%;
+    background-color: var(--first);
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0.6;
+    font-size: 30px;
+    overflow: hidden;
+    color: var(--primary);
+    top: 10%;
+    left: 5%;
 }
 .punteros{
     width: 100%;
@@ -576,7 +621,7 @@ margin-top: 5px;
 }
 .powerbi-info div p,.powerapps div p,.app-web div p{
     line-height: 30px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 .app-web{
@@ -598,4 +643,119 @@ margin-top: 5px;
 #uno img{
     width: 95%;
     box-shadow: 4px 4px 12px var(--third);
+}
+@media (max-width:768px) {
+    #consultoria h3,#auditoria h3, #ciberseguridad h3{
+        font-size: 20px;
+    }
+    #auditoria p, #ciberseguridad p, #consultoria p{
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+    .advisory-details{
+        height: 500px;
+    }
+    .advisory-details div ul li{
+        overflow: hidden;
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .advisory p{
+        font-size: 20px;
+        width: 400px;
+        height: 200px;
+    }
+    .advisory h2{
+        top: -150px;
+        left: 180px;
+        font-size: 100px;
+    }
+    .adv-bg{
+        width: 440px;
+        height:250px;
+    }
+    .origen div h1{
+        font-size: 20px;
+    }
+    .origen div p{
+        font-size: 14px;
+        width: 100%;
+    }
+    #data-analitics p,#data-management p, #data-science p{
+        width: 90%;
+    }
+    #text{
+        width: 60%;
+    }
+    #img{
+        width: 40%;
+    }
+    #img img{
+        width: 100%;
+    }
+    #ref div h3{
+        font-size: 20px;
+    }
+    .numeros div p{
+        font-size: 20px;
+        text-shadow: 2px 2px 2px var(--primary);
+    }
+    .asesoramiento p{
+        width: 90%;
+        font-size: 17px;
+    }
+    .powerbi,.auditoria{
+        flex-direction: column;
+    }
+    .powerbi div{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    .aud-tec{
+        width: 100%;
+    }
+    .aud-tec h2{
+        font-size: 18px;
+        overflow: hidden;
+    }
+    .aud-tec p{
+        font-size: 14px;
+        overflow: hidden;
+    }
+    .inspeccion div{
+        width: 95%;
+    }
+    .inspeccion h2{
+        width: 100%;
+    }
+    .inspeccion div p{
+        width: 90%;
+        margin-top: 5%;
+    }
+    .aseguramiento div h2{
+        font-size: 18px;
+    }
+    .aseguramiento div p{
+        font-size: 15px;
+        height: 120px;
+    }
+    .powerbi-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .powerbi-info div{
+        width: 100%;
+    }
+    .powerbi-info div p{
+        font-size: 12px;        
+    }
+    #uno{
+        width: 65%;
+    }
+    .powerapps div{
+        width: 100%;
+    }
+    .app-web div{
+        width: 100%;
+    }
 }
