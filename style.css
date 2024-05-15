@@ -43,6 +43,41 @@ nav ul li:hover{
     cursor: pointer;
     background-color: var(--secondary);
 }
+.hidden-nav{
+    width: 425px;
+    height: 500px;
+    background-color: var(--secondary);
+    color: var(--letter);
+    position: absolute;
+    top: 80px;
+    z-index: 15;
+    left: -425px;
+    
+}
+.foot-whithin{
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.hidden-nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--letter);
+    gap: 15px;
+}
+.hidden-nav ul li{
+    list-style: none;
+    text-decoration: none;
+    color: var(--letter);
+    line-height: 35px;
+    font-size: 25px;
+}
 .carrousel{
     width: 100%;
     max-width: 120em;
@@ -754,6 +789,225 @@ margin-top: 5px;
     }
     .powerapps div{
         width: 100%;
+    }
+    .app-web div{
+        width: 100%;
+    }
+}
+@media (max-width:425px) {
+    #consultoria,#auditoria, #ciberseguridad{
+        width: 90%;
+        height: 200px;
+    }
+    #consultoria h3,#auditoria h3, #ciberseguridad h3{
+        font-size: 20px;
+        height: 30px;
+    }
+    #auditoria p, #ciberseguridad p, #consultoria p{
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+    .advisory-details{
+        height: 700px;
+        flex-direction: column;
+    }
+    .advisory-details div ul li{
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .advisory p{
+        font-size: 20px;
+        left: 22px;
+        width: 400px;
+        height: 200px;
+    }
+    .advisory h2{
+        top: -150px;
+        left: 100px;
+        font-size: 50px;
+    }
+    .adv-bg{
+        width: 400px;
+        height:250px;
+    }
+    #footer{
+        flex-direction: column;
+    }
+    #footer a img{
+        height: 30px;
+        margin-top: 5px;
+    }
+    #footer div{
+        width: 100%;
+        padding-left: 5%;
+    }
+    footer .social-media{
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer .social-media a img{
+        width: 30px;
+    }
+    #data-analitics h2,#data-management h2, #data-science h2{
+        width: 90%;
+        font-size: 25px;
+    }
+    #data-analitics p,#data-management p, #data-science p{
+        width: 90%;
+        font-size: 15px;
+    }
+    #laimghist{
+        display: none;
+    }
+    #origenhist{
+        width: 90%;
+    }
+    #origenhist img{
+       display: none;
+    }
+    .origen div h1{
+        font-size: 25px;
+        text-shadow: 2px 2px 2px #ED7D31;
+    }
+   .origen div p{
+        text-shadow: 2px 2px 2px #ED7D31;
+    }
+    .us div{
+        width: 100%;
+    }
+    .us div h1{
+        width: 100%;
+        font-size: 25px;
+    }
+    .about #img{
+        display: none;
+    }
+    .about #text{
+        width: 100%;
+    }
+    .exp{
+        height: fit-content;
+    }
+    #ref{
+        flex-direction: column;
+        height: 700px;
+    }
+    #ref div{
+        width: 100%;
+    }
+    #ref div h3{
+        font-size: 20px;
+    }
+    .numeros div{
+        width: 100%;
+    }
+    .numeros div h2{
+        width: 95%;
+        font-size: 25px;
+        text-shadow: 2px 2px 2px var(--primary);
+    }
+    .numeros div p{
+        width: 95%;
+        font-size: 15px;
+        text-shadow: 2px 2px 2px var(--primary);
+    }
+    .asesoramiento h2{
+        width: 95%;
+        font-size: 20px;
+    }
+    .asesoramiento p{
+        width: 99%;
+        font-size: 12px;
+    }
+    .powerbi iframe{
+        width: 95%;
+    }
+    .powerbi,.auditoria{
+        flex-direction: column;
+    }
+    .powerbi div{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    .powerbi div p{
+        font-size: 14px;
+    }
+    .auditoria{
+        height: fit-content;
+    }
+    .aud-img{
+        display: none;
+    }
+    .aud-tec{
+        width: 100%;
+        height: fit-content;
+    }
+    .aud-tec h2{
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .aud-tec p{
+        font-size: 14px;
+        overflow: hidden;
+    }
+    .inspeccion div{
+        width: 100%;
+    }
+    .inspeccion h2{
+        width: 100%;
+        font-size: 20px;
+    }
+    .inspeccion div p{
+        width: 425px;
+        margin-left: 1px;
+        margin-top: 5%;
+        font-size: 14px;
+    }
+    .aseg-img{
+        display: none;
+    }
+    .aseguramiento{
+        height: fit-content;
+    }
+    .aseguramiento div{
+        width: 425%;
+        height: fit-content;
+    }
+    .aseguramiento div h2{
+        width: 100%;
+        font-size: 20px;
+    }
+    .aseguramiento div p{
+        font-size: 15px;
+        height: fit-content;
+        width: 100%;
+    }
+    .powerbi-info{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .powerbi-info div{
+        width: 100%;
+    }
+    .powerbi-info div p{
+        font-size: 12px;        
+    }
+    #uno{
+        display: none;
+    }
+    .powerapps{
+        height: fit-content;
+    }
+    .powerapps div{
+        width: 100%;
+    }
+    .app-web{
+        height: fit-content;
     }
     .app-web div{
         width: 100%;
