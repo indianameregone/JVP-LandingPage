@@ -934,7 +934,8 @@ margin-top: 5px;
     }
     .numeros div p{
         width: 95%;
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: bold;
         text-shadow: 2px 2px 2px var(--primary);
     }
     .asesoramiento{
@@ -947,7 +948,8 @@ margin-top: 5px;
     }
     .asesoramiento p{
         width: 99%;
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: bold;
     }
     .works-class{
         height: fit-content;
@@ -967,6 +969,7 @@ margin-top: 5px;
     }
     .powerbi div p{
         font-size: 18px;
+        font-weight: bold;
         text-shadow: 2px 2px 2px var(--primary);
     }
     .auditoria{
