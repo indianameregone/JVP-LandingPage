@@ -194,7 +194,7 @@ footer{
     justify-content: space-between;
     display: flex;
     overflow: hidden;
-    color: black;
+    color: var(--letter);
     gap: 10px;
     align-items: center;
 }
@@ -204,20 +204,18 @@ footer a{
 #direcciones{
     display: flex;
     width: 50%;
+    gap: 10px;
 }
 footer h3{
-    overflow: hidden;
-    text-shadow: #ffffff 1px 1px 2px;
+    overflow: hidden;    
     font-weight: bold;
 }
 footer h4{
     overflow: hidden;
-    text-shadow: #ffffff 1px 1px 2px;
     font-weight: bold;
 }
 footer p{
     overflow: hidden;
-    text-shadow: #ffffff 1px 1px 2px;
     font-weight: bold;
 }
 footer .social-media{
