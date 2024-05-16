@@ -10,17 +10,46 @@
     <title>Soluciones | JVP</title>
 </head>
 <body>
-    <nav id="navbar">
-        <a href="/index.html" style="text-decoration: none;">
-            <img src="./img/logoAnalitica.png" alt="logoAnalitica" style="width: 100px;">
-        </a>
-        <ul>
-            <a href="/us.html" style="text-decoration: none;"><li>Nosotros</li></a>
-            <a href="/works.html" style="text-decoration: none;"><li>Servicios</li></a>
-            <a href="/solutions.html" style="text-decoration: none;"><li>Soluciones</li></a>
-            <a href="#footer" style="text-decoration: none;"><li>Contacto</li></a>
-        </ul>
-    </nav>
+  <nav id="navbar">
+    <a href="/index.html" style="text-decoration: none">
+      <img
+        src="./img/logoAnalitica.png"
+        alt="logoAnalitica"
+        style="width: 100px"
+      />
+    </a>
+    <ul id="btn-menu">
+      <a href="/us.html" style="text-decoration: none"><li>Nosotros</li></a>
+      <a href="/works.html" style="text-decoration: none"
+        ><li>Servicios</li></a
+      >
+      <a href="/solutions.html" style="text-decoration: none"
+        ><li>Soluciones</li></a
+      >
+      <a href="#footer" style="text-decoration: none"><li>Contacto</li></a>
+    </ul>
+    <section class="unmenu-hidden" onclick="unshower()">
+      <div id="crossX"></div>
+      <div id="crossY"></div>        
+    </section>
+    <section class="menu-hidden" onclick="shower()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </nav>
+  <section class="hidden-nav">
+    <ul>
+      <a href="/us.html" style="text-decoration: none"><li>Nosotros</li></a>
+      <a href="/works.html" style="text-decoration: none"
+        ><li>Servicios</li></a
+      >
+      <a href="/solutions.html" style="text-decoration: none"
+        ><li>Soluciones</li></a
+      >
+      <a href="#footer" style="text-decoration: none"><li>Contacto</li></a>
+    </ul>
+  </section>
     <section class="works-class">
         <section class="powerbi-info">
             <div>
@@ -137,6 +166,6 @@
         </a>
       </div>
     </footer>
-    <script src="index.js" type="module"></script>
+    <script src="index.js"></script>
 </body>
 </html>

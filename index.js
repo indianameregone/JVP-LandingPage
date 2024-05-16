@@ -7,16 +7,16 @@ const btns = document.querySelector('#btn-menu')
 
 
 window.addEventListener('resize',()=>{
-    if(window.screen.width <= 425){
+    if(window.screen.width <= 450){
         btns.style.display = 'none'
         menuHidden.style.display = 'flex'
         menuUnHidden.style.display = 'none'
     }
-    if(window.screen.width > 425){
+    if(window.screen.width > 450){
         btns.style.display = 'flex'
         menuHidden.style.display = 'none'
         menuUnHidden.style.display = 'none'
-        menu.style.left = '-425px'
+        menu.style.left = '-100%'
     }
 
 })
@@ -27,7 +27,7 @@ const shower = ()=>{
     menuUnHidden.style.display = 'flex'
 }
 const unshower = ()=>{    
-    menu.style.left = '425px'
+    menu.style.left = '100%'
     menuHidden.style.display = 'flex'
     menuUnHidden.style.display = 'none'
 }
