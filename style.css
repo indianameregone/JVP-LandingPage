@@ -190,11 +190,20 @@ nav ul li:hover{
 }
 footer{
     background-color: var(--primary);
+    width: 100%;
+    justify-content: space-between;
     display: flex;
     overflow: hidden;
     color: black;
     gap: 10px;
     align-items: center;
+}
+footer a{
+    width: 25%;
+}
+#direcciones{
+    display: flex;
+    width: 50%;
 }
 footer h3{
     overflow: hidden;
@@ -214,10 +223,11 @@ footer p{
 footer .social-media{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     height: 100%;
     gap: 25px;
     align-items: center;
+    justify-content: center;
 }
 footer .social-media img{
     width: 40px;
@@ -679,6 +689,45 @@ margin-top: 5px;
     width: 95%;
     box-shadow: 4px 4px 12px var(--third);
 }
+.menu-hidden{
+    width: 100px;
+    height: 90%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.unmenu-hidden{
+    width: 200px;
+    height: 90%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    right: 5px;
+}
+.menu-hidden div{
+    width: 100%;
+    height: 10px;
+    border-radius: 25px;
+    background-color: var(--letter);
+}
+#crossX{
+    width: 15px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--letter);
+    transform: skew(50deg);
+    position: absolute;
+}
+#crossY{
+    width: 15px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--letter);
+    transform: skew(-50deg);
+    position: absolute;
+}
 @media (max-width:768px) {
     #consultoria h3,#auditoria h3, #ciberseguridad h3{
         font-size: 20px;
@@ -834,6 +883,12 @@ margin-top: 5px;
     }
     #footer{
         flex-direction: column;
+    }
+    footer a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: fit-content;
     }
     #footer a img{
         height: 30px;

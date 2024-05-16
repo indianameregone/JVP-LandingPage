@@ -1,10 +1,36 @@
-import { name } from "./main.js";
-import { test } from "./main.js";
-
-
 const grande = document.querySelector('.grande')
 const punto = document.querySelectorAll('.puntos')
+const menu = document.querySelector('.hidden-nav')
+const menuHidden = document.querySelector('.menu-hidden')
+const menuUnHidden = document.querySelector('.unmenu-hidden')
+const btns = document.querySelector('#btn-menu')
 
+
+window.addEventListener('resize',()=>{
+    if(window.screen.width <= 425){
+        btns.style.display = 'none'
+        menuHidden.style.display = 'flex'
+        menuUnHidden.style.display = 'none'
+    }
+    if(window.screen.width > 425){
+        btns.style.display = 'flex'
+        menuHidden.style.display = 'none'
+        menuUnHidden.style.display = 'none'
+        menu.style.left = '-425px'
+    }
+
+})
+
+const shower = ()=>{    
+    menu.style.left = '0'
+    menuHidden.style.display = 'none'
+    menuUnHidden.style.display = 'flex'
+}
+const unshower = ()=>{    
+    menu.style.left = '425px'
+    menuHidden.style.display = 'flex'
+    menuUnHidden.style.display = 'none'
+}
 punto.forEach((cadapunto,i)=>{
     punto[i].addEventListener('click',()=>{
         let position = i
@@ -17,5 +43,5 @@ punto.forEach((cadapunto,i)=>{
         punto[i].classList.add('activo')
     })
 })
-let testeo = test
-testeo()
+
+
