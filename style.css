@@ -797,7 +797,7 @@ margin-top: 5px;
 @media (max-width:425px) {
     #consultoria,#auditoria, #ciberseguridad{
         width: 90%;
-        height: 200px;
+        height: fit-content;
     }
     #consultoria h3,#auditoria h3, #ciberseguridad h3{
         font-size: 20px;
@@ -805,16 +805,17 @@ margin-top: 5px;
     }
     #auditoria p, #ciberseguridad p, #consultoria p{
         padding: 2px 5px;
-        font-size: 12px;
+        font-size: 15px;
     }
     .advisory-details{
-        height: 700px;
+        height: fit-content;
         flex-direction: column;
+        gap: 10px;
     }
     .advisory-details div ul li{
         overflow: hidden;
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 15px;
+        line-height: 25px;
     }
     .advisory p{
         font-size: 20px;
@@ -858,7 +859,8 @@ margin-top: 5px;
     }
     #data-analitics p,#data-management p, #data-science p{
         width: 90%;
-        font-size: 15px;
+        font-size: 18px;
+        color: var(--primary);
     }
     #laimghist{
         display: none;
@@ -869,19 +871,33 @@ margin-top: 5px;
     #origenhist img{
        display: none;
     }
+    .origen{
+        height: fit-content;
+    }
     .origen div h1{
         font-size: 25px;
-        text-shadow: 2px 2px 2px #ED7D31;
+        color: #ED7D31;
     }
    .origen div p{
-        text-shadow: 2px 2px 2px #ED7D31;
+        
+        color: #ED7D31;
+        font-size: 20px;
     }
     .us div{
         width: 100%;
     }
     .us div h1{
         width: 100%;
-        font-size: 25px;
+        font-size: 28px;
+        text-shadow: 2px 2px 2px var(--secondary);
+    }
+    .us div h2{
+        font-size: 30px;
+        text-shadow: 2px 2px 2px var(--secondary);
+    }
+    .us div p{
+        font-size: 20px;
+        text-shadow: 2px 2px 2px var(--secondary);
     }
     .about #img{
         display: none;
@@ -894,13 +910,19 @@ margin-top: 5px;
     }
     #ref{
         flex-direction: column;
-        height: 700px;
+        height: fit-content;
     }
     #ref div{
         width: 100%;
     }
     #ref div h3{
-        font-size: 20px;
+        font-size: 25px;
+    }
+    #ref ul li{
+        font-weight: bold;
+    }
+    .numeros{
+        height: fit-content;
     }
     .numeros div{
         width: 100%;
@@ -915,13 +937,20 @@ margin-top: 5px;
         font-size: 15px;
         text-shadow: 2px 2px 2px var(--primary);
     }
+    .asesoramiento{
+        height: fit-content;
+    }
     .asesoramiento h2{
         width: 95%;
         font-size: 20px;
+        font-weight: bold;
     }
     .asesoramiento p{
         width: 99%;
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .works-class{
+        height: fit-content;
     }
     .powerbi iframe{
         width: 95%;
@@ -933,8 +962,12 @@ margin-top: 5px;
         width: 100%;
         margin-bottom: 4%;
     }
+    .powerbi div h2{
+        text-shadow: 2px 2px 2px var(--primary);
+    }
     .powerbi div p{
-        font-size: 14px;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px var(--primary);
     }
     .auditoria{
         height: fit-content;
@@ -948,14 +981,20 @@ margin-top: 5px;
     }
     .aud-tec h2{
         font-size: 20px;
+        font-weight: bold;
         overflow: hidden;
     }
     .aud-tec p{
-        font-size: 14px;
+        font-size: 18px;
         overflow: hidden;
+    }
+    .inspeccion{
+        height: fit-content;
+        padding: 2px;
     }
     .inspeccion div{
         width: 100%;
+        margin: 0;
     }
     .inspeccion h2{
         width: 100%;
@@ -965,7 +1004,7 @@ margin-top: 5px;
         width: 425px;
         margin-left: 1px;
         margin-top: 5%;
-        font-size: 14px;
+        font-size: 18px;
     }
     .aseg-img{
         display: none;
@@ -980,9 +1019,13 @@ margin-top: 5px;
     .aseguramiento div h2{
         width: 100%;
         font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        line-height: 30px;
     }
     .aseguramiento div p{
-        font-size: 15px;
+        margin-top: 0;
+        font-size: 18px;
         height: fit-content;
         width: 100%;
     }
@@ -995,7 +1038,7 @@ margin-top: 5px;
         width: 100%;
     }
     .powerbi-info div p{
-        font-size: 12px;        
+        font-size: 18px;        
     }
     #uno{
         display: none;
@@ -1011,5 +1054,8 @@ margin-top: 5px;
     }
     .app-web div{
         width: 100%;
+    }
+    .app-web div p{
+        font-size: 18px;
     }
 }
