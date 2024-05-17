@@ -286,25 +286,30 @@ iframe{
     height: 500px;
     margin-bottom: 5px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .advisory p{
-    position: relative;
-    right: -45px;
-    top: -200px;
-    width: 400px;
-    height: 300px;
+    width: 50%;
+    height: 290px;
+    margin: 15px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
     font-weight: bold;
     font-size: 25px;
-    text-shadow: lightblue 1px 1px 2px;
+    text-shadow: black 2px 2px 2px;
     overflow: hidden;
+    color: var(--letter);
 }
-.advisory h2{
-    position: relative;
+.advisory h2{    
     height: fit-content;
-    top: -230px;
-    left: 680px;
+    width: 700px;
+    margin-left: 10%;
     font-size: 100px;
-    text-shadow: lightblue 1px 1px 2px;
+    line-height: 150px;
+    text-shadow: lightblue 2px 2px 2px;
     overflow: hidden;
 }
 .adv-bg{
@@ -314,8 +319,8 @@ iframe{
     border-radius: 10px;
     opacity: 0.5;
     position: relative;
-    right: -20px;
-    top: 50px;
+    left: 10px;
+    top: 20px;
 }
 .advisory-details{
     width: 100%;
@@ -425,16 +430,22 @@ iframe{
 .us div h2{
     height: 30px;
     font-size: 30px;
+    font-weight: bold;
     overflow: hidden;
+    text-shadow: 2px 2px 2px var(--primary);
 }
 .us div h1{
     height: 100px;
     overflow: hidden;
     font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--primary);
 }
 .us div p{
     height: 90px;
     font-weight: bold;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px var(--primary);
 }
 .about{
     height: 400px;
@@ -461,6 +472,7 @@ iframe{
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    font-size: 20px;
     line-height: 32px;
     color: var(--secondary);
 }
@@ -500,6 +512,10 @@ iframe{
     margin-left: 5%;
     line-height: 24px;
     color: var(--secondary);
+}
+#ref div ul li{
+    font-size: 18px;
+    font-weight: bold;
 }
 .numeros{
     width: 100%;
@@ -726,6 +742,189 @@ margin-top: 5px;
     transform: skew(-50deg);
     position: absolute;
 }
+@media (max-width:820px) {
+    #consultoria h3,#auditoria h3, #ciberseguridad h3{
+        font-size: 20px;
+    }
+    #auditoria p, #ciberseguridad p, #consultoria p{
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+    .advisory-details{
+        height: 500px;
+    }
+    .advisory-details div ul li{
+        overflow: hidden;
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .advisory p{
+        font-size: 25px;
+        width: 90%;
+        height: 200px;
+    }
+    .advisory h2{
+        top: -150px;
+        left: 180px;
+        font-size: 100px;
+    }
+    .adv-bg{
+        width: 440px;
+        height:250px;
+    }
+    .origen div h1{
+        font-size: 20px;
+    }
+    .origen div p{
+        font-size: 14px;
+        width: 100%;
+    }
+    #data-analitics p,#data-management p, #data-science p{
+        width: 90%;
+    }
+    #text{
+        width: 60%;
+    }
+    #img{
+        width: 40%;
+    }
+    #img img{
+        width: 100%;
+    }
+    #ref{
+        height: fit-content;
+    }
+    #ref div h3{
+        font-size: 20px;
+    }
+    #ref div ul li{
+        font-size: 18px;
+    }
+    .numeros div p{
+        font-size: 22px;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px var(--primary);
+    }
+    .asesoramiento{
+        height: fit-content;
+        overflow: hidden;
+    }
+    .asesoramiento p{
+        width: 90%;
+        font-size: 22px;
+        font-weight: bold;
+        overflow: hidden;
+    }
+    .works-class{
+        height: fit-content;
+    }
+    .powerbi,.auditoria{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .powerbi div{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    .powerbi div p{
+        overflow: hidden;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .aud-tec{
+        width: 100%;
+    }
+    .aud-tec h2{
+        font-size: 25px;
+        font-weight: bold;
+        overflow: hidden;
+    }
+    .aud-tec p{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .inspeccion{
+        height: fit-content;
+    }
+    .inspeccion div{
+        width: 95%;
+        height: fit-content;
+    }
+    .inspeccion h2{
+        width: 100%;
+    }
+    .inspeccion div p{
+        width: 90%;
+        margin-top: 2%;
+        overflow: hidden;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .aseguramiento{
+        height: fit-content;
+    }
+    #aseg-div-txt{
+        height: 480px;
+        overflow: hidden;
+    }
+    .aseguramiento div h2{
+        font-size: 25px;
+        line-height: 35px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .aseguramiento div p{
+        overflow: hidden;
+        font-size: 18px;
+        font-weight: bold;
+        height: 170px;
+    }
+    .powerbi-info{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .powerbi-info div{
+        width: 100%;
+    }
+    .powerbi-info div p{
+        font-size: 18px;      
+        font-weight: bold;  
+    }
+    #uno{
+        width: 65%;
+    }
+    .powerapps div{
+        width: 100%;
+    }
+    .powerapps div p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .app-web div{
+        width: 100%;
+    }
+    .app-web div p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .us div{
+        width: 90%;
+    }
+    .us div p{
+        font-size: 25px
+    }
+    .about{
+        height: fit-content;
+    }
+    .about #text p{
+        font-size: 20px;
+    }
+    .exp{
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+}
 @media (max-width:768px) {
     #consultoria h3,#auditoria h3, #ciberseguridad h3{
         font-size: 20px;
@@ -743,8 +942,8 @@ margin-top: 5px;
         line-height: 23px;
     }
     .advisory p{
-        font-size: 20px;
-        width: 400px;
+        font-size: 25px;
+        width: 90%;
         height: 200px;
     }
     .advisory h2{
@@ -842,6 +1041,9 @@ margin-top: 5px;
     }
 }
 @media (max-width:425px) {
+    #btn-menu{
+        display: none;
+    }
     #consultoria,#auditoria, #ciberseguridad{
         width: 90%;
         height: fit-content;
@@ -864,20 +1066,17 @@ margin-top: 5px;
         font-size: 15px;
         line-height: 25px;
     }
+    .advisory{
+        width: 100%;
+        height: 300px;
+    }
     .advisory p{
-        font-size: 20px;
-        left: 22px;
-        width: 400px;
-        height: 200px;
+        font-size: 18px;
+        width: 90%;
     }
-    .advisory h2{
-        top: -150px;
-        left: 100px;
-        font-size: 50px;
-    }
-    .adv-bg{
+    .advisory h2{    
+        font-size: 60px;
         width: 400px;
-        height:250px;
     }
     #footer{
         flex-direction: column;
@@ -911,8 +1110,10 @@ margin-top: 5px;
         font-size: 25px;
     }
     #data-analitics p,#data-management p, #data-science p{
+        padding: 0 5px;
         width: 90%;
         font-size: 18px;
+        font-weight: bold;
         color: var(--primary);
     }
     #laimghist{
@@ -1051,15 +1252,13 @@ margin-top: 5px;
     .inspeccion div{
         width: 100%;
         margin: 0;
+        padding: 0px 15px;
     }
     .inspeccion h2{
         width: 100%;
         font-size: 20px;
     }
     .inspeccion div p{
-        width: 425px;
-        margin-left: 1px;
-        margin-top: 5%;
         font-size: 18px;
     }
     .aseg-img{
