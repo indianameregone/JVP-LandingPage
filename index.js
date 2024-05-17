@@ -6,7 +6,7 @@ const menuUnHidden = document.querySelector('.unmenu-hidden')
 const btns = document.querySelector('#btn-menu')
 
 
-//window.addEventListener('load',()=>{
+
 if(window.screen.width <= 450){
     btns.style.display = 'none'
     menuHidden.style.display = 'flex'
@@ -19,21 +19,19 @@ if(window.screen.width > 450){
     menu.style.left = '-100%'
 }
 
-//})
-/* window.addEventListener('resize',()=>{
-    if(window.screen.width <= 450){
-        btns.style.display = 'none'
-        menuHidden.style.display = 'flex'
-        menuUnHidden.style.display = 'none'
-    }
-    if(window.screen.width > 450){
-        btns.style.display = 'flex'
-        menuHidden.style.display = 'none'
-        menuUnHidden.style.display = 'none'
-        menu.style.left = '-100%'
-    }
-
-}) */
+window.addEventListener('resize',()=>{
+if(window.screen.width <= 450){
+    btns.style.display = 'none'
+    menuHidden.style.display = 'flex'
+    menuUnHidden.style.display = 'none'
+}
+if(window.screen.width > 450){
+    btns.style.display = 'flex'
+    menuHidden.style.display = 'none'
+    menuUnHidden.style.display = 'none'
+    menu.style.left = '-100%'
+}
+}) 
 
 const shower = ()=>{    
     menu.style.left = '0'
