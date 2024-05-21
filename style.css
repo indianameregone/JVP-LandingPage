@@ -742,6 +742,99 @@ margin-top: 5px;
     transform: skew(-50deg);
     position: absolute;
 }
+.des-ing{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--second);
+    border: 1px solid var(--fourth);
+    
+}
+#d-i{
+    width: 40%;
+    height: 100%;
+    border: 2px solid var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/desing.jpg');
+    color: var(--fifth);
+    text-shadow: 1px 1px 3px black;
+}
+#d-i p{
+    font-size: 25px;
+    min-height: 35px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+}
+.des-ing section{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fourth);
+}
+.cols{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.cols div{
+    width: 49%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cols div p{
+    font-size: 25px;
+    min-height: 35px;
+    overflow: hidden;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+}
+.cols div h2{
+    color: var(--fifth);
+    text-shadow: 1px 1px 3px black;
+    min-height: 40px;
+    font-size: 30px;
+}
+.clientes{
+    background-image: url('./img/dotsquare.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clientes h2{
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+    color: var(--primary);
+}
+.clientes div{
+    width: 90%;
+    height: 600px;
+    margin: 20px 20px;
+}
+.clientes img{
+    height: 90px;
+    margin: 5px;
+}
+
+
 @media (max-width:820px) {
     #consultoria h3,#auditoria h3, #ciberseguridad h3{
         font-size: 20px;
@@ -924,6 +1017,9 @@ margin-top: 5px;
         height: fit-content;
         padding-bottom: 10px;
     }
+    .clientes div img{
+        height: 70px;
+    }
 }
 @media (max-width:768px) {
     #consultoria h3,#auditoria h3, #ciberseguridad h3{
@@ -1038,6 +1134,9 @@ margin-top: 5px;
     }
     .app-web div{
         width: 100%;
+    }
+    .clientes div img{
+        height: 65px;
     }
 }
 @media (max-width:425px) {
@@ -1312,5 +1411,50 @@ margin-top: 5px;
     }
     .app-web div p{
         font-size: 18px;
+    }
+    .des-ing{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+    #d-i{
+        width: 100%;
+        height: fit-content;
+    }
+    .des-ing section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--fourth);
+    }
+    .cols div{
+        width: 100%;
+        height: 100%;
+        display: flex;  
+        flex-direction: column; 
+    }
+    .cols div p{
+        font-size: 18px;
+        min-height: 35px;
+ 
+    }
+    .cols div h2{
+        color: var(--fifth);
+        text-shadow: 1px 1px 3px black;
+        min-height: 30px;
+        font-size: 20px;
+    }
+    .clientes{
+        height: fit-content;
+    }
+    .clientes h2{
+        font-size: 30px;
+    }
+    .clientes div img{
+        height: 50px;
     }
 }
